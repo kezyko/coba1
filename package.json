@@ -1,0 +1,14 @@
+{
+  "name": "coba1",
+  "version": "1.0.0",
+  "description": "CodeIgniter 4 dengan Bootstrap 5",
+  "scripts": {
+    "copy-assets": "cp node_modules/bootstrap/dist/css/bootstrap.min.css public/assets/css/ && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js public/assets/js/"
+  },
+  "keywords": ["codeigniter", "bootstrap", "php"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
