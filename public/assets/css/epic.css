@@ -618,16 +618,6 @@ html {
     }
 }
 
-/* Subtle rotation for sparkle */
-@keyframes sparkle-rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 /* Float with subtle rotation for sparkle */
 @keyframes float-sparkle {
     0%, 100% {
