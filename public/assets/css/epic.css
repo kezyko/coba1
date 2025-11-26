@@ -177,6 +177,7 @@ html {
     max-width: 350px;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
     animation: float-up-down 3s ease-in-out infinite;
+    will-change: transform;
 }
 
 /* Floating animation - gentle up and down */
