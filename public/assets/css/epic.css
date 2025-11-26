@@ -325,6 +325,100 @@ html {
     animation: fadeInUp 0.6s ease 0.5s both;
 }
 
+/* Hero Notice */
+.hero-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: rgba(5, 150, 105, 0.1);
+    border-left: 4px solid var(--primary-green);
+    padding: 1rem 1.25rem;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease 0.25s both;
+}
+
+.hero-notice i {
+    color: var(--primary-green);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.hero-notice span {
+    color: var(--gray-800);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+/* Info Notice Card */
+.info-notice-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--primary-green);
+}
+
+.info-notice-icon {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 20px;
+    background: var(--gradient-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-notice-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.info-notice-content h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 0.5rem;
+}
+
+.info-notice-content p {
+    color: var(--gray-600);
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Service Mini Cards */
+.service-mini-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: white;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.service-mini-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.service-mini-card i {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+}
+
+.service-mini-card span {
+    font-weight: 600;
+    color: var(--gray-800);
+}
+
 .stat-item {
     text-align: left;
 }
@@ -795,6 +889,10 @@ html {
         margin-right: auto;
     }
     
+    .hero-notice {
+        text-align: left;
+    }
+    
     .hero-buttons {
         justify-content: center;
     }
@@ -818,6 +916,21 @@ html {
     
     .stats-number {
         font-size: 2rem;
+    }
+    
+    .info-notice-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .info-notice-icon {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+    }
+    
+    .info-notice-icon i {
+        font-size: 1.5rem;
     }
 }
 

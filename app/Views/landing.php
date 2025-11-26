@@ -1,6 +1,6 @@
 <?= $this->extend('layouts/epic') ?>
 
-<?= $this->section('title') ?>Ujian EPIC Online<?= $this->endSection() ?>
+<?= $this->section('title') ?>Sistem Administrasi Tes EPIC<?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
 
@@ -12,15 +12,18 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <i class="bi bi-star-fill"></i>
-                        Gratis Ujian Pertama
+                        Gratis Tes Pertama
                     </div>
                     <h1 class="hero-title">
-                        Ujian <span>EPIC</span> Online
+                        Sistem Administrasi <span>Tes EPIC</span>
                     </h1>
                     <p class="hero-subtitle">
-                        Langkah Mudah Menuju Kompetensi Bahasa Inggris Global. 
-                        Sistem terintegrasi, efisien, dengan sertifikat digital dan pendaftaran yang mudah.
+                        Portal Administrasi Tes EPIC Polinela. Website ini mengelola pendaftaran, jadwal tes, pembayaran QRIS, serta akses hasil kelulusan dan sertifikat digital.
                     </p>
+                    <div class="hero-notice">
+                        <i class="bi bi-info-circle-fill"></i>
+                        <span>Tes EPIC dilaksanakan secara tatap muka di Laboratorium Bahasa Polinela, bukan tes online.</span>
+                    </div>
                     <div class="hero-buttons">
                         <a href="#daftar" class="btn-primary-epic">
                             <i class="bi bi-person-plus-fill"></i>
@@ -41,8 +44,8 @@
                             <div class="stat-label">Tingkat Kepuasan</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">Akses Online</div>
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Sertifikat Diterbitkan</div>
                         </div>
                     </div>
                 </div>
@@ -72,27 +75,44 @@
         <div class="text-center mb-5">
             <div class="section-badge">
                 <i class="bi bi-info-circle-fill"></i>
-                Tentang EPIC
+                Tentang Sistem
             </div>
-            <h2 class="section-title">Apa itu EPIC?</h2>
+            <h2 class="section-title">Apa itu Portal EPIC?</h2>
             <p class="section-subtitle">
-                EPIC (English Proficiency Integrated Center) adalah sistem ujian kompetensi Bahasa Inggris online 
-                yang terintegrasi dari Politeknik Negeri Lampung untuk membantu mahasiswa mencapai standar 
-                kompetensi bahasa internasional.
+                Portal Administrasi EPIC (English Proficiency Integrated Center) adalah sistem layanan administrasi 
+                tes kompetensi Bahasa Inggris dari Politeknik Negeri Lampung. Website ini mengelola pendaftaran, 
+                jadwal, pembayaran, serta akses hasil dan sertifikat digital.
             </p>
         </div>
+        
+        <!-- Important Notice -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <div class="info-notice-card animate-on-scroll">
+                    <div class="info-notice-icon">
+                        <i class="bi bi-building-fill"></i>
+                    </div>
+                    <div class="info-notice-content">
+                        <h4>Tes Dilaksanakan Secara Tatap Muka</h4>
+                        <p>Proses tes EPIC dilaksanakan secara offline di <strong>Laboratorium Bahasa Politeknik Negeri Lampung</strong>. 
+                        Website ini hanya untuk layanan administrasi: pendaftaran, jadwal, pembayaran, dan akses hasil tes serta sertifikat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="row g-4">
             <div class="col-md-6">
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon blue">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"/>
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Ujian Berbasis Online</h3>
+                    <h3 class="feature-title">Pendaftaran Mudah</h3>
                     <p class="feature-description">
-                        Dulu manual dan memakan waktu, sekarang terintegrasi! Ujian dapat dilakukan secara online 
-                        kapan saja dan di mana saja dengan perangkat yang terhubung internet.
+                        Daftar tes EPIC secara online melalui portal ini. Pilih jadwal yang tersedia, 
+                        lengkapi data, dan lakukan pembayaran dengan mudah.
                     </p>
                 </div>
             </div>
@@ -106,8 +126,8 @@
                     </div>
                     <h3 class="feature-title">Sertifikat Digital</h3>
                     <p class="feature-description">
-                        Hasil ujian langsung terintegrasi dengan sistem akademik. Sertifikat dapat diunduh 
-                        dalam format PDF yang resmi dan terverifikasi.
+                        Setelah dinyatakan lulus tes, sertifikat dapat diunduh dalam format PDF 
+                        yang resmi dan terverifikasi melalui portal ini.
                     </p>
                 </div>
             </div>
@@ -121,11 +141,11 @@
         <div class="text-center mb-5">
             <div class="section-badge">
                 <i class="bi bi-gear-fill"></i>
-                Keunggulan
+                Layanan
             </div>
-            <h2 class="section-title">Fitur Unggulan EPIC</h2>
+            <h2 class="section-title">Layanan Portal EPIC</h2>
             <p class="section-subtitle">
-                Sistem modern dengan berbagai kemudahan untuk mendukung proses ujian kompetensi Bahasa Inggris Anda.
+                Berbagai layanan administrasi untuk mendukung proses pendaftaran dan sertifikasi tes EPIC Anda.
             </p>
         </div>
         <div class="row g-4">
@@ -133,13 +153,12 @@
                 <div class="testimonial-card animate-on-scroll">
                     <div class="feature-icon blue mb-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"/>
-                            <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"/>
+                            <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/>
                         </svg>
                     </div>
-                    <h4 class="feature-title">Tes EPIC Terpusat Online</h4>
+                    <h4 class="feature-title">Daftar Tes EPIC</h4>
                     <p class="feature-description">
-                        Sistem ujian yang terintegrasi dan terpusat dengan manajemen soal yang terstandarisasi.
+                        Pendaftaran tes secara online dengan pilihan jadwal yang tersedia di Laboratorium Bahasa.
                     </p>
                 </div>
             </div>
@@ -152,7 +171,7 @@
                     </div>
                     <h4 class="feature-title">Pembayaran QRIS</h4>
                     <p class="feature-description">
-                        Pendaftaran dan pembayaran mudah dengan QRIS. Validasi otomatis tanpa perlu konfirmasi manual.
+                        Pembayaran mudah melalui QRIS dengan verifikasi oleh admin untuk memastikan keamanan transaksi.
                     </p>
                 </div>
             </div>
@@ -160,13 +179,13 @@
                 <div class="testimonial-card animate-on-scroll">
                     <div class="feature-icon purple mb-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
-                            <path d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
                         </svg>
                     </div>
-                    <h4 class="feature-title">Unduh Sertifikat PDF</h4>
+                    <h4 class="feature-title">Lihat Jadwal Tes</h4>
                     <p class="feature-description">
-                        Tracking riwayat tes dan unduh sertifikat resmi dalam format PDF kapan saja.
+                        Informasi jadwal tes yang tersedia di Laboratorium Bahasa serta status pendaftaran.
                     </p>
                 </div>
             </div>
@@ -174,13 +193,36 @@
                 <div class="testimonial-card animate-on-scroll">
                     <div class="feature-icon orange mb-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+                            <path d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/>
                         </svg>
                     </div>
-                    <h4 class="feature-title">Gratis Ujian Pertama</h4>
+                    <h4 class="feature-title">Unduh Sertifikat PDF</h4>
                     <p class="feature-description">
-                        Bebas biaya untuk ujian pertama dengan validasi otomatis status mahasiswa aktif.
+                        Tracking riwayat hasil tes dan unduh sertifikat resmi dalam format PDF setelah dinyatakan lulus.
                     </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Service Info -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-mini-card animate-on-scroll">
+                    <i class="bi bi-clock-history"></i>
+                    <span>Tracking Riwayat Tes</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-mini-card animate-on-scroll">
+                    <i class="bi bi-shield-check"></i>
+                    <span>Verifikasi Admin</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-mini-card animate-on-scroll">
+                    <i class="bi bi-gift"></i>
+                    <span>Gratis Tes Pertama</span>
                 </div>
             </div>
         </div>
@@ -221,7 +263,7 @@
             </div>
             <h2 class="section-title">Apa Kata Mereka?</h2>
             <p class="section-subtitle">
-                Pendapat dari mahasiswa yang telah menggunakan sistem EPIC untuk ujian kompetensi Bahasa Inggris.
+                Pendapat dari mahasiswa yang telah menggunakan layanan administrasi EPIC untuk pendaftaran dan sertifikasi.
             </p>
         </div>
         <div class="row g-4">
@@ -235,7 +277,7 @@
                         <i class="bi bi-star-fill"></i>
                     </div>
                     <p class="testimonial-text">
-                        "Pendaftaran sangat mudah dan cepat. Pembayaran via QRIS langsung terverifikasi otomatis. Sertifikatnya juga bisa langsung diunduh setelah lulus!"
+                        "Pendaftaran sangat mudah dan cepat. Pembayaran via QRIS langsung diverifikasi admin. Sertifikatnya juga bisa langsung diunduh setelah hasil tes keluar!"
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">RA</div>
@@ -256,7 +298,7 @@
                         <i class="bi bi-star-fill"></i>
                     </div>
                     <p class="testimonial-text">
-                        "Gratis untuk ujian pertama sangat membantu mahasiswa. Prosesnya transparan dan hasilnya cepat keluar. Recommended!"
+                        "Gratis untuk tes pertama sangat membantu mahasiswa. Prosesnya transparan, bisa cek jadwal kapan saja, dan hasil cepat keluar di website!"
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">SP</div>
@@ -277,7 +319,7 @@
                         <i class="bi bi-star-half"></i>
                     </div>
                     <p class="testimonial-text">
-                        "Sistem online-nya sangat user-friendly. Bisa akses kapan saja untuk cek status dan jadwal. Ini yang kita butuhkan!"
+                        "Sistemnya sangat user-friendly. Bisa akses kapan saja untuk cek status pendaftaran, jadwal tes, dan unduh sertifikat. Praktis sekali!"
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">DH</div>
@@ -302,7 +344,8 @@
             </div>
             <h2 class="section-title">Jadwal Tes EPIC</h2>
             <p class="section-subtitle">
-                Pilih jadwal yang sesuai dengan waktu Anda. Pendaftaran dibuka sampai H-3 sebelum tanggal ujian.
+                Pilih jadwal yang sesuai dengan waktu Anda. Tes dilaksanakan tatap muka di Laboratorium Bahasa Polinela. 
+                Pendaftaran dibuka sampai H-3 sebelum tanggal tes.
             </p>
         </div>
         <div class="row justify-content-center">
@@ -345,6 +388,12 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="schedule-note mt-3 text-center">
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-geo-alt-fill text-primary"></i> 
+                        Lokasi: <strong>Laboratorium Bahasa, Politeknik Negeri Lampung</strong>
+                    </p>
+                </div>
                 <div class="text-center mt-4">
                     <a href="#daftar" class="btn-primary-epic">
                         <i class="bi bi-person-plus-fill"></i>
@@ -366,7 +415,7 @@
             </div>
             <h2 class="section-title">Pertanyaan Sering Ditanyakan</h2>
             <p class="section-subtitle">
-                Temukan jawaban untuk pertanyaan umum seputar ujian EPIC di bawah ini.
+                Temukan jawaban untuk pertanyaan umum seputar layanan administrasi tes EPIC di bawah ini.
             </p>
         </div>
         <div class="row justify-content-center">
@@ -382,8 +431,8 @@
                             <div class="accordion-body">
                                 Untuk mendaftar tes EPIC, Anda cukup klik tombol "Daftar Sekarang" di halaman ini, 
                                 kemudian login menggunakan akun SIAKAD Polinela. Pilih jadwal yang tersedia, 
-                                lengkapi data, dan lakukan pembayaran jika diperlukan. Status pendaftaran akan 
-                                langsung terverifikasi secara otomatis.
+                                lengkapi data, dan lakukan pembayaran jika diperlukan. Setelah pendaftaran diverifikasi admin, 
+                                Anda akan mendapat konfirmasi untuk mengikuti tes tatap muka di Laboratorium Bahasa.
                             </div>
                         </div>
                     </div>
@@ -397,20 +446,34 @@
                             <div class="accordion-body">
                                 Pembayaran dilakukan melalui QRIS yang dapat discan menggunakan aplikasi e-wallet 
                                 atau mobile banking Anda (OVO, GoPay, Dana, ShopeePay, atau m-banking). 
-                                Setelah pembayaran berhasil, sistem akan melakukan validasi otomatis dan status 
-                                pendaftaran Anda akan langsung terupdate.
+                                Setelah pembayaran berhasil, admin akan melakukan verifikasi dan status 
+                                pendaftaran Anda akan terupdate di portal ini.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                Bagaimana mengunduh sertifikat?
+                                Di mana tes EPIC dilaksanakan?
                             </button>
                         </h2>
                         <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Setelah dinyatakan lulus ujian EPIC, sertifikat dapat diunduh melalui menu 
+                                Tes EPIC dilaksanakan secara <strong>tatap muka di Laboratorium Bahasa Politeknik Negeri Lampung</strong>. 
+                                Website ini hanya mengelola administrasi pendaftaran, jadwal, pembayaran, serta akses hasil dan sertifikat. 
+                                Proses tes tidak dilakukan secara online.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                Bagaimana mengunduh sertifikat?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Setelah dinyatakan lulus tes EPIC, sertifikat dapat diunduh melalui menu 
                                 "Riwayat Tes" di dashboard akun Anda. Sertifikat tersedia dalam format PDF 
                                 yang sudah terverifikasi dengan QR code dan dapat langsung digunakan untuk 
                                 keperluan administrasi akademik maupun profesional.
@@ -419,31 +482,31 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                                Apakah ujian pertama benar-benar gratis?
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                Apakah tes pertama benar-benar gratis?
                             </button>
                         </h2>
-                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Ya, ujian EPIC pertama untuk mahasiswa aktif Polinela adalah gratis. 
-                                Sistem akan melakukan validasi otomatis terhadap status kemahasiswaan Anda. 
-                                Untuk ujian berikutnya (jika diperlukan mengulang), akan dikenakan biaya 
+                                Ya, tes EPIC pertama untuk mahasiswa aktif Polinela adalah gratis. 
+                                Sistem akan melakukan validasi terhadap status kemahasiswaan Anda. 
+                                Untuk tes berikutnya (jika diperlukan mengulang), akan dikenakan biaya 
                                 sesuai ketentuan yang berlaku.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
                                 Berapa skor minimum untuk lulus EPIC?
                             </button>
                         </h2>
-                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
                                 Skor minimum untuk dinyatakan lulus EPIC adalah 450 (setara TOEIC). 
-                                Hasil ujian akan keluar dalam waktu maksimal 7 hari kerja setelah ujian 
-                                dilaksanakan. Anda akan mendapat notifikasi melalui email dan dapat mengecek 
-                                hasil melalui dashboard akun.
+                                Hasil tes akan keluar dalam waktu maksimal 7 hari kerja setelah tes 
+                                dilaksanakan. Anda akan mendapat notifikasi melalui email dan dapat mengakses 
+                                hasil serta sertifikat melalui portal ini.
                             </div>
                         </div>
                     </div>
@@ -457,10 +520,10 @@
 <section class="cta-section" id="daftar">
     <div class="container">
         <div class="cta-content">
-            <h2 class="cta-title">Siap Mengambil Langkah Pertama?</h2>
+            <h2 class="cta-title">Siap Mendaftar Tes EPIC?</h2>
             <p class="cta-subtitle">
-                Daftar sekarang dan mulai perjalanan Anda menuju kompetensi Bahasa Inggris global. 
-                Gratis untuk ujian pertama!
+                Daftar sekarang untuk mengikuti tes EPIC di Laboratorium Bahasa Polinela. 
+                Gratis untuk tes pertama!
             </p>
             <div class="d-flex gap-3 justify-content-center flex-wrap">
                 <a href="#" class="btn-cta">
