@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EPIC - English Proficiency Integrated Center. Ujian kompetensi Bahasa Inggris online terintegrasi dari Polinela. Pendaftaran mudah, sertifikat digital, gratis ujian pertama.">
-    <meta name="keywords" content="EPIC, Polinela, tes bahasa inggris, sertifikat, kompetensi, english proficiency">
+    <meta name="description" content="Portal Administrasi EPIC - English Proficiency Integrated Center. Layanan pendaftaran, jadwal tes, pembayaran QRIS, dan sertifikat digital tes kompetensi Bahasa Inggris Polinela. Tes dilaksanakan tatap muka di Laboratorium Bahasa.">
+    <meta name="keywords" content="EPIC, Polinela, tes bahasa inggris, sertifikat, kompetensi, english proficiency, pendaftaran, laboratorium bahasa">
     <meta name="author" content="Laboratorium Bahasa Polinela">
     <title><?= $this->renderSection('title') ?> - EPIC Polinela</title>
     
@@ -68,7 +68,7 @@
                         <i class="bi bi-mortarboard-fill"></i> EPIC Polinela
                     </div>
                     <p class="footer-description">
-                        English Proficiency Integrated Center - Sistem ujian kompetensi Bahasa Inggris online terintegrasi dari Politeknik Negeri Lampung.
+                        Portal Administrasi EPIC (English Proficiency Integrated Center) - Layanan pendaftaran, jadwal, pembayaran, dan sertifikat digital untuk tes kompetensi Bahasa Inggris Politeknik Negeri Lampung. Tes dilaksanakan tatap muka di Laboratorium Bahasa.
                     </p>
                     <div class="footer-social">
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
