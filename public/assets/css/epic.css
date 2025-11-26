@@ -125,14 +125,12 @@ html {
     box-shadow: var(--shadow-md);
 }
 
-/* Hero Section - Modern 3D Design */
+/* Hero Section - Clean Modern Design */
 .hero-section {
     background: linear-gradient(135deg, 
         #1a56db 0%, 
-        #1e40af 20%, 
-        #059669 50%, 
-        #10b981 70%, 
-        #f0fdf4 90%, 
+        #3b82f6 40%, 
+        #93c5fd 70%, 
         #ffffff 100%);
     min-height: 100vh;
     display: flex;
@@ -150,152 +148,45 @@ html {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(ellipse at 20% 50%, rgba(26, 86, 219, 0.4) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(5, 150, 105, 0.3) 0%, transparent 40%),
-        radial-gradient(ellipse at 60% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 40%);
+        radial-gradient(ellipse at 30% 40%, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
     pointer-events: none;
 }
 
-.hero-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, transparent 30%),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, transparent 30%);
-    pointer-events: none;
-}
-
-/* Animated Particles */
-.hero-particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.particle {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    animation: float-particle 20s infinite ease-in-out;
-}
-
-.particle-1 {
-    width: 10px;
-    height: 10px;
-    top: 20%;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.particle-2 {
-    width: 15px;
-    height: 15px;
-    top: 60%;
-    left: 20%;
-    animation-delay: -5s;
-}
-
-.particle-3 {
-    width: 8px;
-    height: 8px;
-    top: 40%;
-    right: 30%;
-    animation-delay: -10s;
-}
-
-.particle-4 {
-    width: 12px;
-    height: 12px;
-    top: 80%;
-    right: 15%;
-    animation-delay: -15s;
-}
-
-.particle-5 {
-    width: 6px;
-    height: 6px;
-    top: 10%;
-    right: 40%;
-    animation-delay: -7s;
-}
-
-@keyframes float-particle {
-    0%, 100% {
-        transform: translateY(0) translateX(0) scale(1);
-        opacity: 0.3;
-    }
-    25% {
-        transform: translateY(-30px) translateX(20px) scale(1.2);
-        opacity: 0.6;
-    }
-    50% {
-        transform: translateY(-10px) translateX(-15px) scale(0.8);
-        opacity: 0.4;
-    }
-    75% {
-        transform: translateY(-40px) translateX(10px) scale(1.1);
-        opacity: 0.7;
-    }
-}
-
-/* Glow Orbs - Optimized for performance */
-.glow-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(40px);
-    animation: glow-pulse 8s infinite ease-in-out;
-    will-change: transform, opacity;
-}
-
-.glow-1 {
-    width: 300px;
-    height: 300px;
-    background: rgba(26, 86, 219, 0.35);
-    top: 10%;
-    left: 5%;
-    animation-delay: 0s;
-}
-
-.glow-2 {
-    width: 250px;
-    height: 250px;
-    background: rgba(5, 150, 105, 0.3);
-    top: 50%;
-    right: 10%;
-    animation-delay: -3s;
-}
-
-.glow-3 {
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.25);
-    bottom: 20%;
-    left: 40%;
-    animation-delay: -5s;
-}
-
-@keyframes glow-pulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 0.8;
-    }
-}
-
-.hero-row {
+/* Hero Visual - Single Main Asset */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    z-index: 10;
+    z-index: 1;
+    animation: fadeInRight 0.8s ease 0.3s both;
+}
+
+.hero-main-asset {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graduation-cap-3d {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+    animation: float-up-down 3s ease-in-out infinite;
+}
+
+/* Floating animation - gentle up and down */
+@keyframes float-up-down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .hero-content {
@@ -420,105 +311,7 @@ html {
     box-shadow: var(--shadow-md);
 }
 
-/* Floating Education Elements Container */
-.hero-floating-container {
-    position: relative;
-    z-index: 1;
-    animation: fadeInRight 0.8s ease 0.4s both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-floating-visual {
-    width: 100%;
-    max-width: 500px;
-    height: 450px;
-    position: relative;
-}
-
-/* Education Floating Elements */
-.edu-float-element {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
-    will-change: transform;
-}
-
-.edu-float-element svg {
-    width: 100%;
-    height: 100%;
-}
-
-/* Graduation Cap - Main large element (center-top) */
-.edu-graduation {
-    width: 120px;
-    height: 120px;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.95;
-    animation: float-gentle 4s ease-in-out infinite;
-    animation-delay: 0s;
-}
-
-/* Book - Left side */
-.edu-book {
-    width: 90px;
-    height: 90px;
-    top: 35%;
-    left: 5%;
-    opacity: 0.85;
-    animation: float-gentle 4.5s ease-in-out infinite;
-    animation-delay: -1s;
-}
-
-/* Certificate - Right side */
-.edu-certificate {
-    width: 100px;
-    height: 100px;
-    top: 25%;
-    right: 5%;
-    opacity: 0.9;
-    animation: float-gentle 5s ease-in-out infinite;
-    animation-delay: -2s;
-}
-
-/* Medal - Bottom left */
-.edu-medal {
-    width: 80px;
-    height: 80px;
-    bottom: 20%;
-    left: 15%;
-    opacity: 0.8;
-    animation: float-gentle 4.2s ease-in-out infinite;
-    animation-delay: -0.5s;
-}
-
-/* QRIS - Bottom right */
-.edu-qris {
-    width: 70px;
-    height: 70px;
-    bottom: 15%;
-    right: 20%;
-    opacity: 0.75;
-    animation: float-gentle 4.8s ease-in-out infinite;
-    animation-delay: -1.5s;
-}
-
-/* Gentle up-down floating animation (no spin) */
-@keyframes float-gentle {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-}
-
-/* Stats - Updated for dark background */
+/* Scroll Indicator */
 .hero-stats {
     display: flex;
     gap: 3rem;
@@ -554,12 +347,12 @@ html {
 }
 
 .scroll-indicator a {
-    color: white;
+    color: var(--primary-blue);
     text-decoration: none;
 }
 
 .scroll-indicator i {
-    color: white;
+    color: var(--primary-blue);
 }
 
 /* Info Notice Card */
@@ -1075,39 +868,12 @@ html {
         font-size: 2.5rem;
     }
     
-    .hero-stats {
-        gap: 2rem;
-    }
-    
-    .hero-floating-visual {
+    .hero-visual {
         margin-top: 3rem;
-        max-width: 100%;
-        height: 400px;
     }
     
-    .edu-graduation {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .edu-book {
-        width: 75px;
-        height: 75px;
-    }
-    
-    .edu-certificate {
-        width: 85px;
-        height: 85px;
-    }
-    
-    .edu-medal {
-        width: 65px;
-        height: 65px;
-    }
-    
-    .edu-qris {
-        width: 60px;
-        height: 60px;
+    .graduation-cap-3d {
+        max-width: 280px;
     }
 }
 
@@ -1128,16 +894,6 @@ html {
     
     .hero-buttons {
         justify-content: center;
-    }
-    
-    .hero-stats {
-        justify-content: center;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-    }
-    
-    .stat-item {
-        text-align: center;
     }
     
     .section-title {
@@ -1167,53 +923,12 @@ html {
         font-size: 1.5rem;
     }
     
-    /* Floating Education Elements Mobile */
-    .hero-floating-container {
+    .hero-visual {
         margin-top: 2rem;
     }
     
-    .hero-floating-visual {
-        height: 320px;
-    }
-    
-    .edu-graduation {
-        width: 80px;
-        height: 80px;
-        top: 5%;
-    }
-    
-    .edu-book {
-        width: 60px;
-        height: 60px;
-        top: 30%;
-        left: 8%;
-    }
-    
-    .edu-certificate {
-        width: 70px;
-        height: 70px;
-        top: 20%;
-        right: 8%;
-    }
-    
-    .edu-medal {
-        width: 55px;
-        height: 55px;
-        bottom: 25%;
-        left: 12%;
-    }
-    
-    .edu-qris {
-        width: 50px;
-        height: 50px;
-        bottom: 20%;
-        right: 15%;
-    }
-    
-    /* Particles adjust */
-    .glow-1, .glow-2, .glow-3 {
-        width: 150px;
-        height: 150px;
+    .graduation-cap-3d {
+        max-width: 240px;
     }
 }
 

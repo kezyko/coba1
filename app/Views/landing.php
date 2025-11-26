@@ -7,23 +7,15 @@
 <!-- Hero Section -->
 <section class="hero-section" id="hero">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center min-vh-100">
             <div class="col-lg-6">
                 <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="bi bi-star-fill"></i>
-                        Gratis Tes Pertama
-                    </div>
                     <h1 class="hero-title">
                         Sistem Administrasi <span>Tes EPIC</span>
                     </h1>
                     <p class="hero-subtitle">
                         Portal Administrasi Tes EPIC Polinela. Website ini mengelola pendaftaran, jadwal tes, pembayaran QRIS, serta akses hasil kelulusan dan sertifikat digital.
                     </p>
-                    <div class="hero-notice">
-                        <i class="bi bi-info-circle-fill"></i>
-                        <span>Tes EPIC dilaksanakan secara tatap muka di Laboratorium Bahasa Polinela, bukan tes online.</span>
-                    </div>
                     <div class="hero-buttons">
                         <a href="#daftar" class="btn-primary-epic">
                             <i class="bi bi-person-plus-fill"></i>
@@ -34,28 +26,44 @@
                             Lihat Jadwal
                         </a>
                     </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">1.000+</div>
-                            <div class="stat-label">Mahasiswa Terdaftar</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">98%</div>
-                            <div class="stat-label">Tingkat Kepuasan</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Sertifikat Diterbitkan</div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="hero-image">
-                    <div class="hero-illustration">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                <div class="hero-visual">
+                    <div class="hero-main-asset">
+                        <!-- Main 3D Graduation Cap SVG -->
+                        <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="graduation-cap-3d">
+                            <!-- Cap Base Shadow -->
+                            <ellipse cx="100" cy="140" rx="70" ry="12" fill="rgba(0,0,0,0.1)"/>
+                            <!-- Cap Board (mortarboard) - 3D effect -->
+                            <path d="M100 30L20 65L100 100L180 65L100 30Z" fill="url(#capGradient)" stroke="#1e3a8a" stroke-width="2"/>
+                            <path d="M100 100L180 65V70L100 105V100Z" fill="#1e40af"/>
+                            <path d="M100 100L20 65V70L100 105V100Z" fill="#3b82f6"/>
+                            <!-- Cap Crown -->
+                            <path d="M70 75L70 55L130 55L130 75L100 90L70 75Z" fill="url(#crownGradient)"/>
+                            <path d="M70 55L100 70L130 55" stroke="#1e3a8a" stroke-width="1.5" fill="none"/>
+                            <!-- Button on top -->
+                            <circle cx="100" cy="52" r="6" fill="#fbbf24" stroke="#f59e0b" stroke-width="1"/>
+                            <!-- Tassel -->
+                            <line x1="100" y1="52" x2="145" y2="52" stroke="#1e3a8a" stroke-width="2"/>
+                            <path d="M145 52L145 90" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="145" cy="95" r="5" fill="#fbbf24"/>
+                            <path d="M140 95L145 110L150 95" fill="#fbbf24"/>
+                            <!-- Decorative ribbons -->
+                            <path d="M143 110L145 130L147 110" fill="#f59e0b"/>
+                            
+                            <!-- Gradients -->
+                            <defs>
+                                <linearGradient id="capGradient" x1="20" y1="30" x2="180" y2="100">
+                                    <stop offset="0%" stop-color="#3b82f6"/>
+                                    <stop offset="50%" stop-color="#1e40af"/>
+                                    <stop offset="100%" stop-color="#1e3a8a"/>
+                                </linearGradient>
+                                <linearGradient id="crownGradient" x1="70" y1="55" x2="130" y2="90">
+                                    <stop offset="0%" stop-color="#2563eb"/>
+                                    <stop offset="100%" stop-color="#1e40af"/>
+                                </linearGradient>
+                            </defs>
                         </svg>
                     </div>
                 </div>
@@ -64,7 +72,7 @@
     </div>
     <div class="scroll-indicator">
         <a href="#tentang" aria-label="Scroll ke bawah">
-            <i class="bi bi-chevron-down fs-4 text-primary"></i>
+            <i class="bi bi-chevron-down fs-4"></i>
         </a>
     </div>
 </section>
