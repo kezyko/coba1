@@ -430,6 +430,37 @@ html {
     align-items: center;
 }
 
+/* Grid Dots Background Pattern */
+.hero-grid-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+    opacity: 0.4;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Oval Blur Container */
+.hero-oval-blur {
+    position: absolute;
+    width: 85%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, 
+        rgba(255, 255, 255, 0.15) 0%, 
+        rgba(255, 255, 255, 0.08) 40%, 
+        transparent 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+    pointer-events: none;
+}
+
 .hero-floating-visual {
     width: 100%;
     max-width: 500px;
@@ -443,78 +474,163 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
     will-change: transform;
+}
+
+/* Main assets with enhanced shadow */
+.edu-main-asset {
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.25));
 }
 
 .edu-float-element svg {
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Halo Effects for Main Assets */
+.edu-halo {
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    top: -15%;
+    left: -15%;
+    border-radius: 50%;
+    opacity: 0.5;
+    filter: blur(20px);
+    z-index: 1;
+    animation: halo-pulse 3s ease-in-out infinite;
+}
+
+.edu-halo-blue {
+    background: radial-gradient(circle, rgba(26, 86, 219, 0.6) 0%, rgba(59, 130, 246, 0.3) 50%, transparent 70%);
+}
+
+.edu-halo-green {
+    background: radial-gradient(circle, rgba(5, 150, 105, 0.6) 0%, rgba(16, 185, 129, 0.3) 50%, transparent 70%);
+}
+
+@keyframes halo-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
 }
 
 /* Graduation Cap - Main large element (center-top) */
 .edu-graduation {
-    width: 120px;
-    height: 120px;
-    top: 5%;
+    width: 140px;
+    height: 140px;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0.95;
+    opacity: 1;
     animation: float-gentle 4s ease-in-out infinite;
     animation-delay: 0s;
 }
 
-/* Book - Left side */
-.edu-book {
-    width: 90px;
-    height: 90px;
-    top: 35%;
+/* QRIS - Left side, medium size */
+.edu-qris {
+    width: 100px;
+    height: 100px;
+    top: 40%;
     left: 5%;
-    opacity: 0.85;
+    opacity: 0.95;
     animation: float-gentle 4.5s ease-in-out infinite;
     animation-delay: -1s;
 }
 
-/* Certificate - Right side */
+/* Certificate - Right side, medium size */
 .edu-certificate {
-    width: 100px;
-    height: 100px;
-    top: 25%;
+    width: 110px;
+    height: 110px;
+    top: 35%;
     right: 5%;
-    opacity: 0.9;
+    opacity: 0.95;
     animation: float-gentle 5s ease-in-out infinite;
     animation-delay: -2s;
 }
 
-/* Medal - Bottom left */
-.edu-medal {
-    width: 80px;
-    height: 80px;
-    bottom: 20%;
-    left: 15%;
+/* Supporting Icons - Smaller with slower float */
+.edu-support-icon {
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15));
     opacity: 0.8;
-    animation: float-gentle 4.2s ease-in-out infinite;
+}
+
+/* Chat Bubble - Small, top-left area */
+.edu-chat-bubble {
+    width: 50px;
+    height: 50px;
+    top: 15%;
+    left: 15%;
+    animation: float-slow 6s ease-in-out infinite;
     animation-delay: -0.5s;
 }
 
-/* QRIS - Bottom right */
-.edu-qris {
-    width: 70px;
-    height: 70px;
-    bottom: 15%;
-    right: 20%;
-    opacity: 0.75;
-    animation: float-gentle 4.8s ease-in-out infinite;
+/* Badge/Checkmark - Small, bottom center */
+.edu-badge {
+    width: 45px;
+    height: 45px;
+    bottom: 18%;
+    left: calc(50% - 22.5px);
+    animation: float-slow 7s ease-in-out infinite;
     animation-delay: -1.5s;
 }
 
-/* Gentle up-down floating animation (no spin) */
+/* Sparkle - Extra small, top-right area */
+.edu-sparkle {
+    width: 35px;
+    height: 35px;
+    top: 8%;
+    right: 18%;
+    animation: float-sparkle 5.5s ease-in-out infinite;
+    animation-delay: -2.5s;
+}
+
+/* Gentle up-down floating animation for main assets */
 @keyframes float-gentle {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-15px);
+    }
+}
+
+/* Slower floating animation for supporting icons */
+@keyframes float-slow {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-8px) translateX(3px);
+    }
+    50% {
+        transform: translateY(-12px) translateX(0);
+    }
+    75% {
+        transform: translateY(-6px) translateX(-3px);
+    }
+}
+
+/* Float with subtle rotation for sparkle */
+@keyframes float-sparkle {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-6px) rotate(10deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-4px) rotate(-10deg);
     }
 }
 
@@ -1086,28 +1202,33 @@ html {
     }
     
     .edu-graduation {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
     
-    .edu-book {
-        width: 75px;
-        height: 75px;
-    }
-    
-    .edu-certificate {
+    .edu-qris {
         width: 85px;
         height: 85px;
     }
     
-    .edu-medal {
-        width: 65px;
-        height: 65px;
+    .edu-certificate {
+        width: 95px;
+        height: 95px;
     }
     
-    .edu-qris {
-        width: 60px;
-        height: 60px;
+    .edu-chat-bubble {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .edu-badge {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .edu-sparkle {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -1176,38 +1297,53 @@ html {
         height: 320px;
     }
     
-    .edu-graduation {
-        width: 80px;
-        height: 80px;
-        top: 5%;
+    .hero-grid-dots {
+        background-size: 20px 20px;
+        opacity: 0.3;
     }
     
-    .edu-book {
-        width: 60px;
-        height: 60px;
-        top: 30%;
+    .edu-graduation {
+        width: 100px;
+        height: 100px;
+        top: 0%;
+    }
+    
+    .edu-qris {
+        width: 70px;
+        height: 70px;
+        top: 35%;
         left: 8%;
     }
     
     .edu-certificate {
-        width: 70px;
-        height: 70px;
-        top: 20%;
+        width: 80px;
+        height: 80px;
+        top: 30%;
         right: 8%;
     }
     
-    .edu-medal {
-        width: 55px;
-        height: 55px;
-        bottom: 25%;
+    .edu-chat-bubble {
+        width: 35px;
+        height: 35px;
+        top: 12%;
         left: 12%;
     }
     
-    .edu-qris {
-        width: 50px;
-        height: 50px;
-        bottom: 20%;
+    .edu-badge {
+        width: 32px;
+        height: 32px;
+        bottom: 15%;
+    }
+    
+    .edu-sparkle {
+        width: 25px;
+        height: 25px;
+        top: 5%;
         right: 15%;
+    }
+    
+    .edu-halo {
+        filter: blur(15px);
     }
     
     /* Particles adjust */

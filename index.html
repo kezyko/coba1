@@ -113,9 +113,16 @@
                 <!-- Right Column - Floating Education Elements -->
                 <div class="col-lg-6">
                     <div class="hero-floating-container">
+                        <!-- Grid Dots Background Pattern -->
+                        <div class="hero-grid-dots" aria-hidden="true"></div>
+                        
+                        <!-- Oval Blur Container -->
+                        <div class="hero-oval-blur" aria-hidden="true"></div>
+                        
                         <div class="hero-floating-visual">
-                            <!-- Floating Graduation Cap - Main Element -->
-                            <div class="edu-float-element edu-graduation" aria-hidden="true">
+                            <!-- Main Asset 1: Graduation Cap - Large with blue halo -->
+                            <div class="edu-float-element edu-graduation edu-main-asset" aria-hidden="true">
+                                <div class="edu-halo edu-halo-blue"></div>
                                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -139,93 +146,9 @@
                                 </svg>
                             </div>
                             
-                            <!-- Floating Book -->
-                            <div class="edu-float-element edu-book" aria-hidden="true">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                        <linearGradient id="bookCover" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#1a56db"/>
-                                            <stop offset="100%" style="stop-color:#1e40af"/>
-                                        </linearGradient>
-                                        <linearGradient id="bookPages" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#f3f4f6"/>
-                                            <stop offset="100%" style="stop-color:#e5e7eb"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <!-- Book back cover -->
-                                    <path d="M15,25 L85,20 L85,85 L15,80 Z" fill="url(#bookCover)" stroke="#1e40af" stroke-width="1"/>
-                                    <!-- Book pages -->
-                                    <path d="M18,28 L82,23 L82,80 L18,75 Z" fill="url(#bookPages)"/>
-                                    <!-- Page lines -->
-                                    <line x1="25" y1="35" x2="75" y2="32" stroke="#d1d5db" stroke-width="1"/>
-                                    <line x1="25" y1="45" x2="75" y2="42" stroke="#d1d5db" stroke-width="1"/>
-                                    <line x1="25" y1="55" x2="75" y2="52" stroke="#d1d5db" stroke-width="1"/>
-                                    <line x1="25" y1="65" x2="75" y2="62" stroke="#d1d5db" stroke-width="1"/>
-                                    <!-- Book spine -->
-                                    <path d="M15,25 L15,80 L18,75 L18,28 Z" fill="#1e3a8a"/>
-                                    <!-- Bookmark -->
-                                    <path d="M65,20 L65,38 L68,34 L71,38 L71,20" fill="#ef4444"/>
-                                </svg>
-                            </div>
-                            
-                            <!-- Floating Certificate -->
-                            <div class="edu-float-element edu-certificate" aria-hidden="true">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                        <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#fef3c7"/>
-                                            <stop offset="100%" style="stop-color:#fde68a"/>
-                                        </linearGradient>
-                                        <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#dc2626"/>
-                                            <stop offset="100%" style="stop-color:#b91c1c"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <!-- Certificate paper -->
-                                    <rect x="10" y="15" width="80" height="60" rx="3" fill="url(#certGrad)" stroke="#d97706" stroke-width="1"/>
-                                    <!-- Inner border -->
-                                    <rect x="15" y="20" width="70" height="50" rx="2" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
-                                    <!-- Text lines -->
-                                    <rect x="25" y="28" width="50" height="4" rx="1" fill="#d97706" opacity="0.5"/>
-                                    <rect x="30" y="38" width="40" height="3" rx="1" fill="#92400e" opacity="0.3"/>
-                                    <rect x="35" y="46" width="30" height="3" rx="1" fill="#92400e" opacity="0.3"/>
-                                    <!-- Seal -->
-                                    <circle cx="50" cy="60" r="8" fill="#dc2626"/>
-                                    <circle cx="50" cy="60" r="5" fill="#fbbf24"/>
-                                    <!-- Ribbons -->
-                                    <path d="M42,66 L38,85 L44,78 L50,85 L50,66" fill="url(#ribbonGrad)"/>
-                                    <path d="M58,66 L62,85 L56,78 L50,85 L50,66" fill="url(#ribbonGrad)"/>
-                                </svg>
-                            </div>
-                            
-                            <!-- Floating Medal -->
-                            <div class="edu-float-element edu-medal" aria-hidden="true">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                        <linearGradient id="medalGold" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#fcd34d"/>
-                                            <stop offset="50%" style="stop-color:#fbbf24"/>
-                                            <stop offset="100%" style="stop-color:#f59e0b"/>
-                                        </linearGradient>
-                                        <linearGradient id="ribbonBlue" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#1a56db"/>
-                                            <stop offset="100%" style="stop-color:#3b82f6"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <!-- Ribbon -->
-                                    <path d="M35,5 L35,40 L50,35 L65,40 L65,5 Z" fill="url(#ribbonBlue)"/>
-                                    <path d="M40,5 L40,38" stroke="#1e40af" stroke-width="1" opacity="0.5"/>
-                                    <path d="M60,5 L60,38" stroke="#1e40af" stroke-width="1" opacity="0.5"/>
-                                    <!-- Medal circle -->
-                                    <circle cx="50" cy="60" r="28" fill="url(#medalGold)" stroke="#d97706" stroke-width="2"/>
-                                    <circle cx="50" cy="60" r="22" fill="none" stroke="#f59e0b" stroke-width="1"/>
-                                    <!-- Star in medal -->
-                                    <polygon points="50,42 54,54 67,54 57,62 61,75 50,67 39,75 43,62 33,54 46,54" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
-                                </svg>
-                            </div>
-                            
-                            <!-- Floating QRIS Icon -->
-                            <div class="edu-float-element edu-qris" aria-hidden="true">
+                            <!-- Main Asset 2: QRIS Logo - Medium with green halo -->
+                            <div class="edu-float-element edu-qris edu-main-asset" aria-hidden="true">
+                                <div class="edu-halo edu-halo-green"></div>
                                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <linearGradient id="qrisGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -256,6 +179,86 @@
                                     <text x="50" y="73" font-size="6" fill="#059669" text-anchor="middle" font-weight="bold">QRIS</text>
                                     <!-- Home button -->
                                     <circle cx="50" cy="84" r="3" fill="#4b5563"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- Main Asset 3: Certificate - Medium with blue halo -->
+                            <div class="edu-float-element edu-certificate edu-main-asset" aria-hidden="true">
+                                <div class="edu-halo edu-halo-blue"></div>
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#fef3c7"/>
+                                            <stop offset="100%" style="stop-color:#fde68a"/>
+                                        </linearGradient>
+                                        <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#dc2626"/>
+                                            <stop offset="100%" style="stop-color:#b91c1c"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Certificate paper -->
+                                    <rect x="10" y="15" width="80" height="60" rx="3" fill="url(#certGrad)" stroke="#d97706" stroke-width="1"/>
+                                    <!-- Inner border -->
+                                    <rect x="15" y="20" width="70" height="50" rx="2" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
+                                    <!-- Text lines -->
+                                    <rect x="25" y="28" width="50" height="4" rx="1" fill="#d97706" opacity="0.5"/>
+                                    <rect x="30" y="38" width="40" height="3" rx="1" fill="#92400e" opacity="0.3"/>
+                                    <rect x="35" y="46" width="30" height="3" rx="1" fill="#92400e" opacity="0.3"/>
+                                    <!-- Seal -->
+                                    <circle cx="50" cy="60" r="8" fill="#dc2626"/>
+                                    <circle cx="50" cy="60" r="5" fill="#fbbf24"/>
+                                    <!-- Ribbons -->
+                                    <path d="M42,66 L38,85 L44,78 L50,85 L50,66" fill="url(#ribbonGrad)"/>
+                                    <path d="M58,66 L62,85 L56,78 L50,85 L50,66" fill="url(#ribbonGrad)"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- Supporting Icon 1: Chat Bubble - Small floating -->
+                            <div class="edu-float-element edu-support-icon edu-chat-bubble" aria-hidden="true">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="chatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#3b82f6"/>
+                                            <stop offset="100%" style="stop-color:#1d4ed8"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Chat bubble -->
+                                    <path d="M15,20 Q15,10 30,10 L70,10 Q85,10 85,25 L85,55 Q85,70 70,70 L35,70 L20,85 L20,70 Q15,70 15,55 Z" fill="url(#chatGrad)"/>
+                                    <!-- Dots -->
+                                    <circle cx="35" cy="40" r="5" fill="white" opacity="0.9"/>
+                                    <circle cx="50" cy="40" r="5" fill="white" opacity="0.9"/>
+                                    <circle cx="65" cy="40" r="5" fill="white" opacity="0.9"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- Supporting Icon 2: Badge/Star - Small floating -->
+                            <div class="edu-float-element edu-support-icon edu-badge" aria-hidden="true">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#10b981"/>
+                                            <stop offset="100%" style="stop-color:#059669"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Badge circle -->
+                                    <circle cx="50" cy="50" r="40" fill="url(#badgeGrad)"/>
+                                    <circle cx="50" cy="50" r="32" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+                                    <!-- Checkmark -->
+                                    <path d="M30,50 L45,65 L70,35" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- Supporting Icon 3: Sparkle/Star - Extra small floating -->
+                            <div class="edu-float-element edu-support-icon edu-sparkle" aria-hidden="true">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#fbbf24"/>
+                                            <stop offset="100%" style="stop-color:#f59e0b"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- 4-point star sparkle -->
+                                    <path d="M50,10 L55,40 L85,50 L55,60 L50,90 L45,60 L15,50 L45,40 Z" fill="url(#sparkleGrad)"/>
                                 </svg>
                             </div>
                         </div>
