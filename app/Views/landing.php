@@ -467,7 +467,7 @@
                     <i class="bi bi-person-plus-fill"></i>
                     Daftar Sekarang
                 </a>
-                <a href="#" class="btn-secondary-epic" style="background: transparent; border-color: white; color: white;">
+                <a href="#" class="btn-secondary-epic-light">
                     <i class="bi bi-search"></i>
                     Cek Status Pendaftaran
                 </a>
