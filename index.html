@@ -56,8 +56,21 @@
 
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
+        <!-- Animated Background Particles -->
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="glow-orb glow-1"></div>
+            <div class="glow-orb glow-2"></div>
+            <div class="glow-orb glow-3"></div>
+        </div>
+        
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center hero-row">
+                <!-- Left Column - Text Content -->
                 <div class="col-lg-6">
                     <div class="hero-content">
                         <div class="hero-badge">
@@ -65,15 +78,11 @@
                             Gratis Tes Pertama
                         </div>
                         <h1 class="hero-title">
-                            Sistem Administrasi <span>Tes EPIC</span>
+                            Portal Administrasi <span>EPIC Polinela</span>
                         </h1>
                         <p class="hero-subtitle">
-                            Portal Administrasi Tes EPIC Polinela. Website ini mengelola pendaftaran, jadwal tes, pembayaran QRIS, serta akses hasil kelulusan dan sertifikat digital.
+                            Website ini hanya untuk pendaftaran, pembayaran QRIS, jadwal, tracking hasil dan sertifikat digital. Tes tetap dilakukan offline di Laboratorium Bahasa.
                         </p>
-                        <div class="hero-notice">
-                            <i class="bi bi-info-circle-fill"></i>
-                            <span>Tes EPIC dilaksanakan secara tatap muka di Laboratorium Bahasa Polinela, bukan tes online.</span>
-                        </div>
                         <div class="hero-buttons">
                             <a href="#daftar" class="btn-primary-epic">
                                 <i class="bi bi-person-plus-fill"></i>
@@ -100,13 +109,49 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Right Column - 3D Visual -->
                 <div class="col-lg-6">
-                    <div class="hero-image">
-                        <div class="hero-illustration">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-                                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
-                            </svg>
+                    <div class="hero-3d-container">
+                        <div class="hero-3d-visual">
+                            <!-- 3D Globe -->
+                            <div class="globe-3d">
+                                <div class="globe-sphere">
+                                    <div class="globe-ring ring-1"></div>
+                                    <div class="globe-ring ring-2"></div>
+                                    <div class="globe-ring ring-3"></div>
+                                    <div class="globe-core"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- 3D Graduation Cap -->
+                            <div class="grad-cap-3d">
+                                <div class="cap-top"></div>
+                                <div class="cap-base"></div>
+                                <div class="cap-tassel">
+                                    <div class="tassel-string"></div>
+                                    <div class="tassel-end"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating Elements -->
+                            <div class="floating-element elem-1">
+                                <i class="bi bi-book-fill"></i>
+                            </div>
+                            <div class="floating-element elem-2">
+                                <i class="bi bi-trophy-fill"></i>
+                            </div>
+                            <div class="floating-element elem-3">
+                                <i class="bi bi-award-fill"></i>
+                            </div>
+                            <div class="floating-element elem-4">
+                                <i class="bi bi-translate"></i>
+                            </div>
+                            
+                            <!-- EPIC Badge 3D -->
+                            <div class="epic-badge-3d">
+                                <span>EPIC</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,7 +159,7 @@
         </div>
         <div class="scroll-indicator">
             <a href="#tentang" aria-label="Scroll ke bawah">
-                <i class="bi bi-chevron-down fs-4 text-primary"></i>
+                <i class="bi bi-chevron-down fs-4"></i>
             </a>
         </div>
     </section>
